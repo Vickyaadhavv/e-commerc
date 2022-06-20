@@ -1,0 +1,449 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@300&display=swap');
+
+/*font-family: 'Kaushan Script', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor:#A91B60;
+    --primary:#FF0080;
+    --secondary:#EC9EC0;
+    --ternary:#EBE0D0;
+    --black:rgba(0 0 0 0.8);
+    --white:#fff;
+}
+.navbar{
+    max-width: 1300px;
+    width: 100%;
+    /*background-color: #1ebe89;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    box-shadow: rgba(50,50,93,0.25) 0px 50px 100px -20px, rgba(0,0,0,0.3) 0px 30px 60px -30px;
+}
+.logo img{
+    width: 100px;
+    object-fit: contain;
+}
+nav{
+  /*  background-color: #fff;*/
+    width: 40%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    /*background-color: #EC9EC0;*/
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--maincolor);
+    font-family: 'Poppins', sans-serif;
+}
+.icons{
+    display: flex;
+}
+.icons .fa-solid{
+    color: var(--maincolor);
+    margin-left: 1em;
+    font-size: 1.1rem;
+}
+.icons  .fa-bars{
+    display: none;
+}
+/*media queries navbar*/
+@media  screen and (max-width:990px) {
+    html{
+     font-size: 15px;
+    }
+}
+@media  screen and (max-width:768px){
+    html{
+        font-size: 14px;
+       }
+       .navbar{
+           max-width: 670px;
+       }
+       nav ul{
+           position: absolute;
+           top: 0;
+           left: 0;
+           background-color: var(--maincolor);
+           width: 100%;
+           display: block;
+           text-align: center;
+           padding: 1em;
+           display: none;
+       }
+       nav li{
+           margin-bottom: 1em;
+       }
+       nav a{
+        color: var(--ternary);
+        font-size: 1.2rem;
+       }
+       .icons .fa-solid{
+        font-size: 1.2rem;
+    }
+    .icons  .fa-bars{
+        display: block;
+    }
+    
+    }
+    @media  screen and (max-width:568px){
+        html{
+            font-size: 12px;
+           }
+           .logo img{
+            width: 80px;
+        }
+        .navbar{
+            max-width: 530px;
+        }
+    }
+
+/*section 1*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto 1em;
+   /* background-color: aqua;*/
+    width: 100%;
+}
+.containbox{
+    width:45%;
+   /* background-color: yellow;*/
+    padding: .3em;
+}
+.containbox h1{
+    color: var(--maincolor);
+    font-size: 2.8rem;
+    
+font-family: 'Raleway', sans-serif;
+}
+.shopping{
+    font-family: 'Kaushan Script', cursive;
+    width: 100%;
+    font-size: 3rem;
+    display: inline-block;
+    text-align: right;
+}
+.containbox p{
+    font-size: .9rem;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    margin: .5em 0;
+   
+}
+.btn{
+    width: 35%;
+    padding: .5em 1.3em;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    background-color: var(--maincolor);
+    color: var(--ternary);
+    margin-top: 1.5em;
+}
+.imgcontainer{
+    max-width: 100%;
+}
+
+/*media queary section 1*/
+@media  screen and (max-width:990px){
+    .container{
+        max-width: 950px;
+    }
+}
+@media  screen and (max-width:768px){
+.container{
+    flex-direction: column;
+}
+.containbox{
+    width:85%;
+}
+.containbox h1{
+    font-size: 2.2rem;
+    margin-top: .5em;
+}
+.shopping{
+    font-size: 2.2rem;
+    text-align: center;
+}
+.btn{
+    width: 25%;
+    padding: .8em;
+    font-size: 1rem;
+}
+.imgcontainer{
+    max-width: 80%;
+ display: block;
+ margin: 0 auto;
+
+}
+}
+@media  screen and (max-width:600px){
+    .btn{
+        width: 30%;}
+}
+@media  screen and (max-width:450px){
+   html{
+       font-size: 12px;
+   }
+   .container{
+    flex-direction: column-reverse;
+}.containbox h1{
+    text-align: center;
+}
+.btn{
+    width: 40%;
+}
+}
+
+@media  screen and (max-width:300px){
+    .btn{
+        width: 50%;
+    }
+}
+/*section 2*/
+.promotion{
+    justify-content: space-between;
+    margin-top: 1em;
+  /*  background-color: #FF0080;*/
+  background-image: linear-gradient(var(--secondary),var(--ternary),var(--secondary));
+    padding: 1em 0;
+}
+.cards{
+    width: 40%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0  3px lightgrey;
+}
+.cards img{
+    width: 50%;
+}
+.cardcontent{
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+}
+.cardcontent h1{
+font-family: 'Kaushan Script', cursive;
+}
+.btnAll{
+ width: 80%;
+}
+
+
+@media  screen and (max-width:990px){
+    .btnAll{
+        width: 100%;
+        font-size: .9rem;
+       } 
+       .cardcontent h1{
+        font-size: 1.5rem; 
+    } 
+}
+@media  screen and (max-width:768px){
+    .cards{
+        width: 90%;
+    }
+    .btnAll{
+        width: 35%;
+       } 
+       .cardcontent{
+        text-align: right;
+    }
+    .cards img{
+        width: 80%;
+    }
+}
+@media  screen and (max-width:568px){
+    .cards img{
+        width: 50%;
+    }.btnAll{
+        width: 50%;
+       } 
+}
+@media  screen and (max-width:450px){
+    .btnAll{
+        width: 100%;
+       } 
+}@media  screen and (max-width:300px){
+    .cards img{
+        width: 60%;
+    }
+    .cardcontent h1{
+        font-size: 1.2rem; 
+    } 
+}
+
+
+
+/*section3*/
+.title h1{
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0.5em 0;
+font-family: 'Raleway', sans-serif;
+}
+.productcards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   /* background-color: var(--primary);*/
+    margin: 2em o;
+}
+.productcard{
+width: 22%;
+/*background-color: yellow;*/
+padding: 0 1em;
+box-shadow: 4px 4px 20px -5px var(--secondary);
+margin-bottom: 1.5em;
+}
+.productcard img{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 300px;
+    object-fit: contain;
+}
+.productcard h2{
+    font-size: 1.8rem;
+font-family: 'Kaushan Script', cursive;
+    color: var(--maincolor);
+}
+.actualprice{
+    margin: .5em 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.price{
+    text-decoration: line-through;
+    margin-right: .5em ;
+    display: inline-block;
+ font-weight: normal;
+ font-size: 1.2rem;
+}
+.ratings{
+    font-size: 1rem;
+    color: var(--maincolor);
+    margin: .5em 0;
+}
+
+/*media quaries*/
+@media  screen and (max-width:990px){
+    .productcard{
+        width: 30%;
+        }
+}
+@media  screen and (max-width:768px){
+    .productcard{
+        width: 40%;
+        }
+}
+@media  screen and (max-width:568px){
+    .productcard{
+        width: 80%;
+        }.title h1{
+            font-size: 2.5rem;
+        }.productcard img{
+            height: 200px;
+        }
+}
+.servicetext{
+    text-align: center;
+    margin-bottom:0.5em
+}
+
+
+
+.brands{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.brands img{
+    width: 100px;
+    margin-bottom: 1em;
+}
+@media  screen and (max-width:768px){
+    .brands{
+        flex-direction: row;
+        }
+}
+@media  screen and (max-width:568px){
+    .brands{
+        flex-direction: column;
+    }
+}
+.footer{
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+}
+.footertext{
+    width: 20%;
+}
+.footertext p{
+font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    margin-bottom: .3em;
+}
+.footertext h2{
+    color: var(--maincolor);
+    margin-bottom: .3em;
+}
+.fab{
+    font-size: 1.1rem;
+    margin-left: .8em;
+    margin-top: 1em;
+    text-shadow: -1px -1px var(--maincolor);
+    transition:transform .5s ;
+}
+.fab:hover{
+    color: var(--maincolor);
+    text-shadow: -1px -1px var(--maincolor);
+    transform: translateY(2px);
+}
+
+/**/
+@media  screen and (max-width:768px){
+    .footer{
+        flex-direction: row;
+        }.footertext{
+            width: 40%;
+            margin-bottom: 1em;
+        }.footertext h2{
+            font-size: 1.2rem;
+        }
+}
+@media  screen and (max-width:568px){
+    .footer{
+        text-align: center;
+        }.footertext{
+            width: 80%;
+            margin-bottom: 1em;
+        }.footertext h2{
+            font-size: 1.2rem;
+        }
+}
